@@ -1,0 +1,586 @@
+{
+  "id": "aura-dental-atelier",
+  "name": "Aura Dental Atelier",
+  "shortName": "Aura Dental",
+  "category": "Comprehensive & Aesthetic Dental Practice",
+  "tagline": "Modern dental medicine shaped by clinical precision and quiet hospitality.",
+  "heroHeadline": "Thoughtful dental care designed around comfort, longevity, and natural harmony.",
+  "heroDescription": "We believe modern dentistry should feel calm, transparent, and restorative. Experience clinical excellence in an environment crafted for your peace of mind.",
+  "announcement": {
+    "text": "Now welcoming new patients for comprehensive oral health examinations and bespoke smile planning.",
+    "linkText": "Schedule your visit",
+    "linkHref": "#appointment",
+    "isActive": true
+  },
+  "logoText": {
+    "primary": "AURA",
+    "secondary": "DENTAL ATELIER"
+  },
+  "contact": {
+    "phone": "+919876543210",
+    "displayPhone": "+91 (0) 98765 43210",
+    "emergencyPhone": "+919876543211",
+    "displayEmergencyPhone": "+91 (0) 98765 43211",
+    "email": "concierge@auradentalatelier.example",
+    "address": {
+      "street": "42 Richmond Promenade, 3rd Floor",
+      "suiteOrFloor": "Heritage Wing, Suites 301-304",
+      "city": "Bengaluru",
+      "stateOrProvince": "Karnataka",
+      "postalCode": "560025",
+      "country": "India",
+      "fullAddress": "42 Richmond Promenade, Suites 301-304, Bengaluru, Karnataka 560025"
+    },
+    "mapUrl": "https://maps.google.com/?q=Richmond+Road+Bengaluru",
+    "mapEmbedQuery": "Richmond Road, Bengaluru",
+    "whatsappNumber": "+919876543210",
+    "socials": {
+      "instagram": "https://instagram.com/example",
+      "facebook": "https://facebook.com/example",
+      "linkedin": "https://linkedin.com/company/example"
+    }
+  },
+  "hours": [
+    {
+      "days": "Monday – Friday",
+      "hours": "08:30 AM – 06:30 PM",
+      "isClosed": false
+    },
+    {
+      "days": "Saturday",
+      "hours": "09:00 AM – 03:00 PM",
+      "isClosed": false
+    },
+    {
+      "days": "Sunday",
+      "hours": "Emergency Consultations by Prior Reservation",
+      "isClosed": false
+    }
+  ],
+  "navigation": [
+    {
+      "label": "Philosophy",
+      "href": "#about",
+      "description": "Our human-centered approach to oral medicine"
+    },
+    {
+      "label": "Doctor",
+      "href": "#dentist",
+      "description": "Meet our clinical director and team"
+    },
+    {
+      "label": "Services",
+      "href": "#services",
+      "description": "Preventive, restorative, and aesthetic procedures"
+    },
+    {
+      "label": "Specializations",
+      "href": "#specializations",
+      "description": "Complex reconstructions and smile rehabilitation"
+    },
+    {
+      "label": "Technology",
+      "href": "#technology",
+      "description": "Ultra-low dose imaging and digital workflows"
+    },
+    {
+      "label": "Gallery",
+      "href": "#gallery",
+      "description": "Studio spaces and clinical environment"
+    },
+    {
+      "label": "Why Us",
+      "href": "#benefits",
+      "description": "The four pillars of patient-first care"
+    },
+    {
+      "label": "FAQ",
+      "href": "#faq",
+      "description": "Answers to common patient inquiries"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact",
+      "description": "Hours, location, and studio directions"
+    },
+    {
+      "label": "Book Consultation",
+      "href": "#appointment",
+      "isPrimaryCta": true,
+      "description": "Reserve your dedicated time with our team"
+    }
+  ],
+  "statistics": [
+    {
+      "value": "1-on-1",
+      "label": "Dedicated Focus",
+      "description": "Unhurried appointments with your lead clinician"
+    },
+    {
+      "value": "100%",
+      "label": "Digital Workflows",
+      "description": "3D intraoral scanning without messy impressions"
+    },
+    {
+      "value": "0.1 mSv",
+      "label": "Low-Dose Imaging",
+      "description": "Ultra-conservative diagnostics for patient safety"
+    },
+    {
+      "value": "15+ Yrs",
+      "label": "Clinical Leadership",
+      "description": "Evidence-based practice in restorative dentistry"
+    }
+  ],
+  "dentist": {
+    "name": "Dr. Aria Sen",
+    "role": "Clinical Director & Lead Restorative Dentist",
+    "credentials": "BDS, MDS (Prosthodontics), Fellow ICOI",
+    "introduction": "“Dentistry is not merely about restoring tooth structure—it is about restoring peace of mind, ease of conversation, and the effortless confidence to smile without second thought.”",
+    "extendedBio": [
+      "Dr. Aria Sen completed her advanced residency in Prosthodontics and Implant Dentistry, followed by clinical fellowships in minimally invasive biomimetic restorations.",
+      "With over fifteen years of focused clinical practice, she is committed to patient education, conservative treatment modalities, and the thoughtful integration of 3D digital planning into everyday care.",
+      "Dr. Sen lectures on digital restorative workflows and believes that the foundation of exceptional clinical outcomes begins with an unhurried, empathetic diagnostic conversation."
+    ],
+    "quote": "Every patient brings a unique biological and aesthetic story. Our responsibility is to listen first, inform with clarity, and execute with quiet perfection.",
+    "signatureName": "Dr. Aria Sen, MDS",
+    "highlights": [
+      {
+        "label": "Special Focus",
+        "value": "Biomimetic Inlays, Ceramic Restorations & Occlusal Rehabilitation"
+      },
+      {
+        "label": "Memberships",
+        "value": "Indian Prosthodontic Society, International Congress of Oral Implantologists"
+      },
+      {
+        "label": "Clinical Philosophy",
+        "value": "Preservation of Natural Enamel & Evidence-Led Diagnostics"
+      }
+    ],
+    "affiliations": [
+      "Indian Prosthodontic Society",
+      "International Congress of Oral Implantologists",
+      "Academy of Biomimetic Dentistry"
+    ],
+    "image": {
+      "src": null,
+      "alt": "Portrait of Dr. Aria Sen, Clinical Director at Aura Dental Atelier",
+      "caption": "Dr. Aria Sen, Lead Clinician & Director"
+    }
+  },
+  "about": {
+    "eyebrow": "Our Practice Philosophy",
+    "headline": "A sanctuary for oral health where clinical mastery meets quiet empathy.",
+    "paragraphs": [
+      "At Aura Dental Atelier, we have designed every detail of the patient journey to eliminate the anxiety traditionally associated with dental visits. From sound-dampened private suites to warm ambient lighting, our space encourages relaxation from the moment you arrive.",
+      "We practice biomimetic and minimally invasive dentistry. This means we prioritize preserving your natural tooth structure whenever possible, utilizing advanced adhesive ceramics and biological principles that replicate the biomechanical strength of natural enamel.",
+      "No rushed consultations. No hidden treatment tiers. You receive a complete digital record of your diagnostic scans, accompanied by transparent, straightforward explanations of every viable option."
+    ],
+    "philosophy": [
+      {
+        "title": "Enamel Preservation",
+        "description": "We treat healthy tooth structure as irreplaceable, favoring micro-conservative preparations over aggressive crown removals."
+      },
+      {
+        "title": "Transparent Dialogue",
+        "description": "We share high-resolution intraoral photography so you see exactly what we see before any procedure is initiated."
+      },
+      {
+        "title": "Sensory Calm",
+        "description": "Acoustic insulation, warm organic finishes, and noise-cancelling audio create a restful clinical atmosphere."
+      }
+    ],
+    "media": {
+      "src": null,
+      "alt": "Interior view of the serene consultation suite at Aura Dental Atelier",
+      "caption": "Consultation Suite with ambient natural illumination"
+    }
+  },
+  "services": [
+    {
+      "id": "preventive-wellness",
+      "number": "01",
+      "title": "Comprehensive Preventive Care",
+      "tagline": "Systematic oral health evaluations and guided biofilm therapy.",
+      "category": "Foundation Care",
+      "shortDescription": "Gentle airflow biofilm removal, digital occlusal assessments, and remineralization therapies tailored to your oral microbiome.",
+      "fullDescription": "Routine preventive visits at Aura Dental go beyond basic scaling. We utilize gentle warm-water airflow technology to remove subgingival biofilm without scraping enamel. Every visit includes low-dose digital diagnostics, periodontal risk mapping, and personalized dietary guidance to protect your natural dentition for life.",
+      "features": [
+        "Warm-water guided biofilm therapy (GBT)",
+        "Comprehensive periodontal pocket mapping",
+        "High-magnification optical evaluation",
+        "Salivary pH and remineralization profiling"
+      ],
+      "recommendedFor": "Adults and adolescents seeking gentle, proactive oral wellness maintenance."
+    },
+    {
+      "id": "biomimetic-restorative",
+      "number": "02",
+      "title": "Biomimetic Restorative Dentistry",
+      "tagline": "Restoring natural tooth biomechanics through micro-layering ceramics.",
+      "category": "Restorative",
+      "shortDescription": "Micro-hybrid composites and CAD/CAM ceramic onlays engineered to mimic the flexure and luminescence of natural dentin.",
+      "fullDescription": "Traditional dentistry often grinds down substantial healthy tooth structure to seat full crowns. Biomimetic dentistry changes this by bonding custom-milled porcelain onlays and inlays exclusively to damaged zones. This preserves the maximum possible natural tooth vitality and prevents unnecessary root canal treatments.",
+      "features": [
+        "Enamel-sparing ceramic onlays and inlays",
+        "Dentin sealing protocols under dental dam isolation",
+        "High-definition shade matching with cross-polarized photography",
+        "Bio-compatible, BPA-free restorative resins"
+      ],
+      "recommendedFor": "Patients with worn fillings, cracked cusps, or localized structural decay."
+    },
+    {
+      "id": "aesthetic-rehabilitation",
+      "number": "03",
+      "title": "Aesthetic Smile Harmonization",
+      "tagline": "Custom porcelain veneers and subtle architectural smile design.",
+      "category": "Aesthetic",
+      "shortDescription": "Ultra-thin ceramic veneers, digital smile design previews, and micro-aesthetic contouring for natural, understated elegance.",
+      "fullDescription": "We do not believe in monochromatic, overly bulky veneers. Dr. Sen designs each porcelain laminate with individualized optical translucency, micro-texture, and incisal halos that complement your facial symmetry and natural lip dynamics. Test your new smile with a live intraoral mock-up prior to any final fabrication.",
+      "features": [
+        "3D digital smile simulation and physical try-in mock-up",
+        "Hand-layered feldspathic and lithium disilicate ceramics",
+        "Minimally invasive or non-prep veneer techniques",
+        "Harmonious gingival recontouring"
+      ],
+      "recommendedFor": "Individuals seeking natural aesthetic enhancement, diastema closure, or color correction."
+    },
+    {
+      "id": "implantology-reconstruction",
+      "number": "04",
+      "title": "Precision Implantology & Replacement",
+      "tagline": "Digitally guided implant placement for permanent, lifelike stability.",
+      "category": "Surgical & Replacement",
+      "shortDescription": "CBCT-guided titanium and zirconia implants with screw-retained ceramic crowns that look, feel, and function like natural roots.",
+      "fullDescription": "Losing a tooth shouldn't compromise your surrounding teeth or facial bone volume. Using 3D computer-guided surgical guides, our implant placement is minimally invasive, highly predictable, and engineered for long-term osseointegration and gingival harmony.",
+      "features": [
+        "3D Cone Beam CT (CBCT) computer-guided navigation",
+        "Biocompatible titanium and metal-free ceramic implants",
+        "Custom emergence-profile zirconia abutments",
+        "Immediate temporary crowns for aesthetic zones"
+      ],
+      "recommendedFor": "Patients needing single tooth replacement, bridge alternatives, or complete arch stability."
+    },
+    {
+      "id": "gentle-endodontics",
+      "number": "05",
+      "title": "Microscopic Endodontic Therapy",
+      "tagline": "High-magnification root canal preservation with sonic irrigation.",
+      "category": "Endodontics",
+      "shortDescription": "Preserving deeply compromised teeth through operating microscope visualization and warm bioceramic sealers.",
+      "fullDescription": "Modern endodontics should never be traumatic. With Zeiss clinical operating microscopes magnifying canal anatomy up to 20x, we can locate micro-canals and cleanse infections with extreme precision. Bioceramic root filling materials ensure long-term sterile sealing and rapid tissue healing.",
+      "features": [
+        "High-power surgical microscope visualization",
+        "Sonic 3D canal disinfection systems",
+        "Biocompatible calcium silicate bioceramic obturation",
+        "Comfort-focused continuous local anesthesia"
+      ],
+      "recommendedFor": "Acute dental pain, pulpitis, deep infections, or complex trauma management."
+    },
+    {
+      "id": "orthodontic-aligners",
+      "number": "06",
+      "title": "Clear Aligner Orthodontics",
+      "tagline": "Discreet, digital tooth realignment for balanced bite kinematics.",
+      "category": "Orthodontics",
+      "shortDescription": "Custom-designed transparent aligners that gently guide teeth into optimal alignment and occlusal balance.",
+      "fullDescription": "Straightening teeth is as much about joint health and wear prevention as it is about aesthetics. With 3D digital treatment simulations, you can visualize the step-by-step movement of your teeth and enjoy removable, virtually invisible aligners that fit your professional lifestyle.",
+      "features": [
+        "Intraoral digital scan with instant outcome simulation",
+        "Custom biomechanically staged aligner trays",
+        "Periodic remote monitoring and check-in options",
+        "Post-treatment retention planning included"
+      ],
+      "recommendedFor": "Adults and professionals looking to correct crowding, spacing, or bite discrepancies."
+    }
+  ],
+  "specializations": [
+    {
+      "id": "spec-full-mouth",
+      "number": "01",
+      "title": "Full-Arch Occlusal Rehabilitation",
+      "tagline": "Rebuilding collapsed bites, worn dentition, and TMJ equilibrium.",
+      "description": "For patients suffering from chronic grinding, severe enamel erosion, or missing teeth that have shifted jaw alignment. We conduct thorough digital jaw tracking and kinesiographic analysis to systematically restore chewing comfort and facial height.",
+      "highlights": [
+        "Comprehensive TMJ and muscle palpation evaluation",
+        "Deprogramming splints to find physiologic centric relation",
+        "Phased restorative progression using bonded overlays"
+      ],
+      "suitableFor": [
+        "Severe acid erosion & bruxism",
+        "Collapsed vertical dimension",
+        "Chronic muscular jaw fatigue"
+      ]
+    },
+    {
+      "id": "spec-micro-veneers",
+      "number": "02",
+      "title": "Micro-Layered Biomimetic Veneers",
+      "tagline": "Artisanal ceramic craftsmanship with negligible enamel reduction.",
+      "description": "Unlike standardized laboratory crowns, our micro-veneers are individually hand-characterized by master ceramists to match internal tooth dentin lobes, subtle incisal translucency, and natural light reflection under varying lighting environments.",
+      "highlights": [
+        "High-definition studio portraiture and shade mapping",
+        "Conservative sub-millimeter tooth preparation",
+        "Multi-phase dry and wet try-in pastes for exact color verification"
+      ],
+      "suitableFor": [
+        "Intrinsic tetracycline or fluorosis staining",
+        "Microdontia (peg laterals) and developmental gaps",
+        "Chipped incisal edges requiring durable aesthetic restoration"
+      ]
+    },
+    {
+      "id": "spec-comfort-care",
+      "number": "03",
+      "title": "Dental Anxiety & Comfort Protocols",
+      "tagline": "A gentle, respectful approach for patients with dental apprehension.",
+      "description": "We understand that dental phobia is real and valid. We offer step-by-step control signals, buffered warm local anesthesia that eliminates the sting, noise-cancelling acoustic headsets, and unhurried pacing with zero pressure.",
+      "highlights": [
+        "Patient-controlled pause hand signals at any second",
+        "Buffered anesthetic solutions delivered at body temperature",
+        "Private treatment suites with dedicated air purification"
+      ],
+      "suitableFor": [
+        "Past traumatic dental experiences",
+        "Sensitive gag reflexes",
+        "Patients returning to dental care after extended intervals"
+      ]
+    }
+  ],
+  "technology": {
+    "eyebrow": "Modern Clinical Workflows",
+    "headline": "Advanced technology serving precision, safety, and transparency.",
+    "description": "We invest in modern digital equipment not for show, but to make your diagnostics safer, your treatment more accurate, and your time in the chair as efficient and comfortable as possible.",
+    "items": [
+      {
+        "id": "tech-intraoral-scan",
+        "title": "3D Optical Intraoral Scanner",
+        "subtitle": "Zero goop, instant 3D models",
+        "description": "High-speed laser scanning captures tens of thousands of data points per second, generating a photorealistic 3D map of your teeth and gums without silicone impression trays.",
+        "patientBenefit": "Comfortable, accurate, and allows immediate visual review of your oral architecture on an overhead 4K display."
+      },
+      {
+        "id": "tech-low-dose-cbct",
+        "title": "Ultra Low-Dose 3D CBCT Imaging",
+        "subtitle": "Sub-millimeter anatomical insight",
+        "description": "Our specialized cone beam computed tomography system captures volumetric 3D bone and nerve maps with up to 80% lower radiation exposure than traditional medical CT scans.",
+        "patientBenefit": "Precise implant placement and diagnosis of hidden infections without unnecessary radiation exposure."
+      },
+      {
+        "id": "tech-guided-biofilm",
+        "title": "Airflow Guided Biofilm Therapy",
+        "subtitle": "Gentle, non-abrasive prophylaxis",
+        "description": "A micro-fine spray of warm water and erythritol powder gently dissolves plaque and biofilm from teeth, restorations, and implants without metal scraping or enamel abrasion.",
+        "patientBenefit": "A warm, painless cleaning experience that leaves teeth polished and gums invigorated."
+      },
+      {
+        "id": "tech-operating-microscope",
+        "title": "Zeiss Surgical Operating Microscopes",
+        "subtitle": "Illumination and 20x magnification",
+        "description": "Surgical optics provide shadow-free coaxial illumination and up to twenty times magnification, allowing our clinicians to identify micro-fractures invisible to the naked eye.",
+        "patientBenefit": "Conservative micro-dentistry that saves natural tooth structure and ensures watertight margins."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Studio Environment",
+    "headline": "A calm, purposeful space crafted for your well-being.",
+    "description": "Explore our reception lounge, private treatment suites, and digital diagnostic center. Designed with natural timber, acoustic damping, and abundant filtered daylight.",
+    "items": [
+      {
+        "id": "gal-1",
+        "title": "Reception & Welcome Lounge",
+        "category": "Studio Interior",
+        "caption": "Warm oak finishes, curated art, and unhurried hospitality.",
+        "aspectRatio": "landscape",
+        "image": {
+          "src": null,
+          "alt": "Reception lounge with minimalist oak seating and soft warm lighting"
+        }
+      },
+      {
+        "id": "gal-2",
+        "title": "Private Clinical Suite I",
+        "category": "Treatment Suite",
+        "caption": "Sound-insulated operatories equipped with ergonomic patient chairs.",
+        "aspectRatio": "portrait",
+        "image": {
+          "src": null,
+          "alt": "Modern dental operatory featuring ergonomic chair and overhead monitor"
+        }
+      },
+      {
+        "id": "gal-3",
+        "title": "Digital Diagnostic Center",
+        "category": "Technology",
+        "caption": "Intraoral scanning and low-dose 3D cone beam computed tomography suite.",
+        "aspectRatio": "landscape",
+        "image": {
+          "src": null,
+          "alt": "Diagnostic suite housing digital 3D imaging equipment"
+        }
+      },
+      {
+        "id": "gal-4",
+        "title": "Ceramic Shade Laboratory",
+        "category": "Artisanal Studio",
+        "caption": "Custom shade verification under balanced 5500K daylight lighting.",
+        "aspectRatio": "square",
+        "image": {
+          "src": null,
+          "alt": "Custom shade matching room with specialized optical lights"
+        }
+      },
+      {
+        "id": "gal-5",
+        "title": "Consultation & Review Room",
+        "category": "Dialogue",
+        "caption": "A non-clinical desk environment for transparent diagnostic discussions.",
+        "aspectRatio": "landscape",
+        "image": {
+          "src": null,
+          "alt": "Private consultation room with diagnostic displays for patient discussion"
+        }
+      },
+      {
+        "id": "gal-6",
+        "title": "Sterilization & Hygiene Bay",
+        "category": "Safety Protocols",
+        "caption": "Hospital-grade Class B autoclaves and closed-loop disinfection systems.",
+        "aspectRatio": "portrait",
+        "image": {
+          "src": null,
+          "alt": "Hospital-grade transparent sterilization center"
+        }
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "The Aura Standard",
+    "headline": "Four guiding principles that shape every patient interaction.",
+    "description": "We built our practice on the values we would expect for our own families. Here is what you can rely on at every appointment.",
+    "items": [
+      {
+        "number": "01",
+        "title": "We Listen First",
+        "description": "Before any instruments are touched, we sit down to hear your goals, previous experiences, and any apprehensions you may have.",
+        "detail": "Unhurried 45-minute initial consultations ensure your perspective is the cornerstone of our treatment plan."
+      },
+      {
+        "number": "02",
+        "title": "We Explain Clearly",
+        "description": "We show you direct high-resolution photographs and 3D scans so you understand the reason behind every recommendation.",
+        "detail": "No medical jargon or opaque estimates. You receive a structured, written plan with clear timelines."
+      },
+      {
+        "number": "03",
+        "title": "We Preserve Nature",
+        "description": "Natural enamel is a biological marvel. We utilize adhesive biomimetic techniques to save tooth structure whenever possible.",
+        "detail": "Conservative micro-preparations rather than invasive grinding for full crowns."
+      },
+      {
+        "number": "04",
+        "title": "We Stay Connected",
+        "description": "Our care doesn't end when you leave the chair. Our concierge team follows up after procedures to ensure comfortable healing.",
+        "detail": "Direct emergency contact line for post-operative questions and continuous peace of mind."
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "id": "test-1",
+      "quote": "The difference in atmosphere is immediate. Dr. Sen walked me through the 3D scans of my fractured molar and explained why a ceramic onlay was superior to shaving the whole tooth for a crown. The procedure was completely painless.",
+      "author": "Ananya K.",
+      "treatment": "Biomimetic Ceramic Onlay",
+      "verified": true,
+      "rating": 5
+    },
+    {
+      "id": "test-2",
+      "quote": "Having avoided dental visits for over four years due to past anxiety, Aura Dental was a breath of fresh air. The team is remarkably patient, gentle, and non-judgmental. My smile feels healthy and clean again.",
+      "author": "Rohan M.",
+      "treatment": "Guided Biofilm Therapy & Wellness",
+      "verified": true,
+      "rating": 5
+    },
+    {
+      "id": "test-3",
+      "quote": "The level of aesthetic detail Dr. Sen achieved with my front veneers is astounding. They look entirely natural in sunlight and feel just like my own teeth. I could not be happier with the outcome.",
+      "author": "Priyanka S.",
+      "treatment": "Aesthetic Porcelain Veneers",
+      "verified": true,
+      "rating": 5
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-1",
+      "question": "What happens during my first visit to Aura Dental Atelier?",
+      "answer": "Your initial visit is a comprehensive, unhurried 45 to 60-minute evaluation. We begin with a relaxed conversation about your dental history and goals, followed by ultra-low-dose digital radiographs, a 3D intraoral scan, and high-definition photography. Dr. Sen will review these scans with you on-screen and develop a clear, personalized roadmap for your oral health.",
+      "category": "New Patients"
+    },
+    {
+      "id": "faq-2",
+      "question": "What is Biomimetic Dentistry and how is it different from traditional dentistry?",
+      "answer": "Biomimetic dentistry means 'mimicking biology.' Instead of aggressive tooth grinding to fit standardized metal-ceramic crowns, we use advanced adhesive bonding and custom-milled ceramics that replicate the natural strength, flexibility, and thermal expansion of real teeth. This preserves up to 70% more natural tooth structure and minimizes the risk of nerve damage.",
+      "category": "Treatments"
+    },
+    {
+      "id": "faq-3",
+      "question": "I experience significant dental anxiety. How do you accommodate nervous patients?",
+      "answer": "We prioritize your physical and emotional comfort. You have complete control: we agree on a hand signal that pauses treatment instantly. We utilize buffered, body-temperature local anesthetics so you don't feel a sharp sting, provide noise-cancelling headphones, and never rush a procedure.",
+      "category": "Patient Comfort"
+    },
+    {
+      "id": "faq-4",
+      "question": "How do you handle dental emergencies outside standard operating hours?",
+      "answer": "We maintain a dedicated emergency telephone line for patients of record experiencing acute pain, swelling, or dental trauma. When possible, we arrange same-day priority appointments to stabilize your condition and restore comfort promptly.",
+      "category": "Appointments"
+    },
+    {
+      "id": "faq-5",
+      "question": "How do appointment reservations and payment transparency work?",
+      "answer": "We believe in complete financial transparency. Before commencing any treatment beyond your initial diagnosis, you will receive an itemized treatment estimate detailing each phase, material, and cost. We accept all major digital payment methods and credit options.",
+      "category": "Pricing & Policies"
+    }
+  ],
+  "appointment": {
+    "title": "Request a Consultation",
+    "subtitle": "Begin your journey toward healthy, harmonious oral wellness.",
+    "description": "Select your preferred date and time. Our concierge team will review your inquiry and contact you promptly to confirm your dedicated appointment slot.",
+    "disclaimer": "Note: This is a frontend demo interface. Submissions are processed locally for demonstration. In production, this connects to your clinical scheduling API or CRM.",
+    "phonePrompt": "Prefer to speak with our concierge directly? Call us during clinic hours.",
+    "servicesOffered": [
+      "Comprehensive Oral Health Exam & 3D Scan",
+      "Gentle Guided Biofilm Cleaning (GBT)",
+      "Biomimetic Ceramic Restoration / Onlay",
+      "Aesthetic Smile Harmonization & Veneers",
+      "Precision Implant Consultation",
+      "Clear Aligner Orthodontic Evaluation",
+      "Second Opinion / Treatment Review"
+    ],
+    "timeSlots": [
+      "Morning (09:00 AM – 12:00 PM)",
+      "Early Afternoon (12:00 PM – 03:00 PM)",
+      "Late Afternoon (03:00 PM – 06:00 PM)"
+    ]
+  },
+  "seo": {
+    "title": "Aura Dental Atelier | Modern Dental Medicine & Biomimetic Restorations",
+    "metaDescription": "Aura Dental Atelier offers comprehensive, biomimetic, and aesthetic dental care in a serene, modern clinical environment. Reserve your unhurried consultation.",
+    "keywords": [
+      "Aura Dental Atelier",
+      "Biomimetic Dentistry",
+      "Ceramic Veneers",
+      "Preventive Oral Care",
+      "Dental Implants",
+      "Modern Dental Clinic",
+      "Dr Aria Sen"
+    ],
+    "canonicalUrl": "https://auradentalatelier.example",
+    "ogTitle": "Aura Dental Atelier — Thoughtful Dental Care & Biomimetic Dentistry",
+    "ogDescription": "Modern dental medicine shaped by clinical precision, transparent communication, and quiet hospitality.",
+    "ogImage": ""
+  }
+}
