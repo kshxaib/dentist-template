@@ -12,6 +12,7 @@ export interface BusinessContact {
   emergencyPhone?: string;
   displayEmergencyPhone?: string;
   email: string;
+  notificationEmail?: string;
   address: {
     street: string;
     suiteOrFloor?: string;
@@ -141,6 +142,7 @@ export interface AppointmentConfig {
   description: string;
   disclaimer: string;
   phonePrompt: string;
+  recipientEmail?: string;
   servicesOffered: string[];
   timeSlots: string[];
 }

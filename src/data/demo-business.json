@@ -192,7 +192,7 @@
       }
     ],
     "media": {
-      "src": null,
+      "src": "/images/about-suite.jpg",
       "alt": "Interior view of the serene consultation suite at Aura Dental Atelier",
       "caption": "Consultation Suite with ambient natural illumination"
     }
@@ -395,7 +395,7 @@
         "caption": "Warm oak finishes, curated art, and unhurried hospitality.",
         "aspectRatio": "landscape",
         "image": {
-          "src": null,
+          "src": "/images/gallery/gal-1-reception.jpg",
           "alt": "Reception lounge with minimalist oak seating and soft warm lighting"
         }
       },
@@ -406,7 +406,7 @@
         "caption": "Sound-insulated operatories equipped with ergonomic patient chairs.",
         "aspectRatio": "portrait",
         "image": {
-          "src": null,
+          "src": "/images/gallery/gal-2-suite.jpg",
           "alt": "Modern dental operatory featuring ergonomic chair and overhead monitor"
         }
       },
@@ -417,7 +417,7 @@
         "caption": "Intraoral scanning and low-dose 3D cone beam computed tomography suite.",
         "aspectRatio": "landscape",
         "image": {
-          "src": null,
+          "src": "/images/gallery/gal-3-diagnostic.jpg",
           "alt": "Diagnostic suite housing digital 3D imaging equipment"
         }
       },
@@ -428,7 +428,7 @@
         "caption": "Custom shade verification under balanced 5500K daylight lighting.",
         "aspectRatio": "square",
         "image": {
-          "src": null,
+          "src": "/images/gallery/gal-4-shade-lab.jpg",
           "alt": "Custom shade matching room with specialized optical lights"
         }
       },
@@ -439,7 +439,7 @@
         "caption": "A non-clinical desk environment for transparent diagnostic discussions.",
         "aspectRatio": "landscape",
         "image": {
-          "src": null,
+          "src": "/images/gallery/gal-5-consultation.jpg",
           "alt": "Private consultation room with diagnostic displays for patient discussion"
         }
       },
@@ -450,7 +450,7 @@
         "caption": "Hospital-grade Class B autoclaves and closed-loop disinfection systems.",
         "aspectRatio": "portrait",
         "image": {
-          "src": null,
+          "src": "/images/gallery/gal-6-sterilization.jpg",
           "alt": "Hospital-grade transparent sterilization center"
         }
       }
@@ -549,7 +549,8 @@
     "title": "Request a Consultation",
     "subtitle": "Begin your journey toward healthy, harmonious oral wellness.",
     "description": "Select your preferred date and time. Our concierge team will review your inquiry and contact you promptly to confirm your dedicated appointment slot.",
-    "disclaimer": "Note: This is a frontend demo interface. Submissions are processed locally for demonstration. In production, this connects to your clinical scheduling API or CRM.",
+    "recipientEmail": "khanshoaibishtiyak@gmail.com",
+    "disclaimer": "Note: Submissions are delivered directly to the clinic concierge inbox. We confirm all reservation requests promptly.",
     "phonePrompt": "Prefer to speak with our concierge directly? Call us during clinic hours.",
     "servicesOffered": [
       "Comprehensive Oral Health Exam & 3D Scan",

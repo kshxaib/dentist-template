@@ -14,6 +14,12 @@ interface AppointmentSectionProps {
 export const AppointmentSection: React.FC<AppointmentSectionProps> = ({ business }) => {
   const { appointment, contact } = business;
 
+  const targetEmail = appointment.recipientEmail || contact.notificationEmail || contact.email;
+  const isConfiguredEmail =
+    Boolean(targetEmail) &&
+    !targetEmail.includes('your-clinic-email') &&
+    !targetEmail.endsWith('.example');
+
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -26,6 +32,8 @@ export const AppointmentSection: React.FC<AppointmentSectionProps> = ({ business
 
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [sentToEmail, setSentToEmail] = useState('');
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -34,25 +42,66 @@ export const AppointmentSection: React.FC<AppointmentSectionProps> = ({ business
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
+    setErrorMessage('');
 
-    // =========================================================================
-    // FUTURE INTEGRATION POINT (Phase 5+):
-    // In future phases, connect this payload to your clinical backend,
-    // CRM (e.g. HubSpot/Dentrix), or automated outreach webhook.
-    // e.g. await fetch('/api/appointments', { method: 'POST', body: JSON.stringify(formData) })
-    // =========================================================================
+    // If template is still using default placeholder email, simulate success smoothly
+    if (!isConfiguredEmail) {
+      setTimeout(() => {
+        setSubmitting(false);
+        setSentToEmail('');
+        setSubmitted(true);
+      }, 450);
+      return;
+    }
 
-    setTimeout(() => {
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(targetEmail.trim())}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          _subject: `New Patient Consultation: ${formData.fullName} (${business.name})`,
+          _template: 'table',
+          _captcha: 'false',
+          _replyto: formData.email,
+          'Full Name': formData.fullName,
+          'Email Address': formData.email,
+          'Phone Number': formData.phone,
+          'Selected Service': formData.serviceInterest,
+          'Preferred Date': formData.preferredDate || 'Flexible / Earliest available',
+          'Preferred Time Slot': formData.preferredTimeSlot || 'Any time',
+          'Patient Notes': formData.message || 'No additional notes provided',
+          'Submitted At': new Date().toLocaleString(),
+        }),
+      });
+
+      const data = await response.json();
+      if (response.ok && (data.success === 'true' || data.success === true)) {
+        setSentToEmail(targetEmail.trim());
+        setSubmitted(true);
+      } else {
+        setErrorMessage(
+          data.message || 'Unable to submit your inquiry at this moment. Please call our concierge desk directly.'
+        );
+      }
+    } catch {
+      setErrorMessage(
+        'Network error while transmitting your request. Please check your internet connection or call our clinic directly.'
+      );
+    } finally {
       setSubmitting(false);
-      setSubmitted(true);
-    }, 450);
+    }
   };
 
   const resetForm = () => {
     setSubmitted(false);
+    setErrorMessage('');
+    setSentToEmail('');
     setFormData({
       fullName: '',
       email: '',
@@ -169,30 +218,39 @@ export const AppointmentSection: React.FC<AppointmentSectionProps> = ({ business
                 <div className="absolute -bottom-1 -right-1 w-2.5 h-2.5 border-b border-r border-[#B8EEE8]/40" />
 
                 {submitted ? (
-                  /* Local Demo Success State */
+                  /* Success State */
                   <div className="py-8 space-y-6 text-center animate-in fade-in duration-300">
-                    <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full border border-[#B8EEE8]/30 bg-[#B8EEE8]/10 text-[#B8EEE8]">
-                      <IconMark name="badge-check" className="w-6 h-6" />
+                    <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-[#B8EEE8]/30 bg-[#B8EEE8]/10 text-[#B8EEE8]">
+                      <IconMark name="badge-check" className="w-7 h-7" />
                     </div>
 
                     <div className="space-y-2">
                       <h3 className="font-display text-2xl font-medium text-white">
-                        Inquiry Received (Demo)
+                        {sentToEmail ? 'Inquiry Transmitted Successfully' : 'Inquiry Received (Demo Mode)'}
                       </h3>
-                      <p className="text-sm text-[#9AA29D] max-w-md mx-auto">
-                        Thank you, <span className="font-medium text-white">{formData.fullName || 'Valued Patient'}</span>. Your requested appointment interest has been recorded locally.
+                      <p className="text-sm text-[#9AA29D] max-w-md mx-auto leading-relaxed">
+                        Thank you, <span className="font-medium text-white">{formData.fullName || 'Valued Patient'}</span>. Your requested appointment preferences have been recorded.
+                        {sentToEmail
+                          ? ' An email notification has been dispatched to our clinic concierge.'
+                          : ' Our concierge team will review your requested date and contact you shortly.'}
                       </p>
                     </div>
 
-                    {/* Clarifying architectural notice */}
-                    <div className="rounded-xs bg-white/5 p-4 text-xs text-[#8E9790] border border-white/10 max-w-lg mx-auto text-left space-y-1">
-                      <p className="font-mono uppercase tracking-wider text-[11px] text-white">Architectural Notice:</p>
-                      <p>
-                        {appointment.disclaimer}
-                      </p>
-                    </div>
+                    {sentToEmail ? (
+                      <div className="rounded-sm bg-white/5 p-4 text-xs text-[#B8EEE8] border border-white/10 max-w-lg mx-auto flex items-center justify-center gap-2">
+                        <IconMark name="shield-check" className="w-4 h-4 text-[#B8EEE8] shrink-0" />
+                        <span>Dispatched to clinic inbox: <strong>{sentToEmail}</strong></span>
+                      </div>
+                    ) : (
+                      <div className="rounded-sm bg-white/5 p-4 text-xs text-[#8E9790] border border-white/10 max-w-lg mx-auto text-left space-y-1">
+                        <p className="font-mono uppercase tracking-wider text-[11px] text-white">Template Notice:</p>
+                        <p>
+                          To route these inquiries directly to your real Gmail, simply set <code className="text-[#B8EEE8] bg-white/10 px-1 py-0.5 rounded">"recipientEmail"</code> in <code className="text-white bg-white/10 px-1 py-0.5 rounded">src/data/demo-business.json</code>.
+                        </p>
+                      </div>
+                    )}
 
-                    <div className="pt-2">
+                    <div className="pt-2 flex flex-wrap justify-center gap-3">
                       <Button
                         variant="outline"
                         size="sm"
@@ -201,6 +259,21 @@ export const AppointmentSection: React.FC<AppointmentSectionProps> = ({ business
                       >
                         Submit Another Inquiry
                       </Button>
+                      {contact.whatsappNumber && (
+                        <Button
+                          href={formatWhatsAppLink(
+                            contact.whatsappNumber,
+                            `Hello ${business.name}, I just submitted a consultation request for ${formData.fullName}.`
+                          )}
+                          variant="aqua"
+                          size="sm"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          iconLeft={<IconMark name="whatsapp" className="w-3.5 h-3.5" />}
+                        >
+                          Chat on WhatsApp
+                        </Button>
+                      )}
                     </div>
                   </div>
                 ) : (
@@ -214,6 +287,13 @@ export const AppointmentSection: React.FC<AppointmentSectionProps> = ({ business
                         Please indicate your scheduling preferences and our clinical coordinator will contact you.
                       </p>
                     </div>
+
+                    {errorMessage && (
+                      <div className="rounded-sm bg-red-950/40 border border-red-500/30 p-3 text-xs text-red-200 flex items-start gap-2.5">
+                        <IconMark name="info" className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
+                        <p className="leading-relaxed">{errorMessage}</p>
+                      </div>
+                    )}
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {/* Full Name */}
